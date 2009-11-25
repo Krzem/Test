@@ -1,0 +1,18 @@
+<p>
+  <b>Name:</b>
+  <%=h @testy.name %>
+</p>
+
+<p>
+  <b>Surname:</b>
+  <%=h @testy.surname %>
+</p>
+
+<p>
+  <b>Email:</b>
+  <%=h @testy.email %>
+</p>
+
+
+<%= link_to 'Edit', edit_testy_path(@testy) %> |
+<%= link_to 'Back', testies_path %>

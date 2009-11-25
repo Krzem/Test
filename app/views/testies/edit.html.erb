@@ -1,0 +1,24 @@
+<h1>Editing testy</h1>
+
+<% form_for(@testy) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </p>
+  <p>
+    <%= f.label :surname %><br />
+    <%= f.text_field :surname %>
+  </p>
+  <p>
+    <%= f.label :email %><br />
+    <%= f.text_field :email %>
+  </p>
+  <p>
+    <%= f.submit 'Update' %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @testy %> |
+<%= link_to 'Back', testies_path %>
